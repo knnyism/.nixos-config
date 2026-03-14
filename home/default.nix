@@ -50,7 +50,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ "git" "z" ];
-      theme = "juanghurtado";
+      theme = "bira";
     };
   };
 
