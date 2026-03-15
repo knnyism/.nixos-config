@@ -21,4 +21,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
     initialPassword = "changeme";
   };
+
+  programs.steam.enable = true;
 }

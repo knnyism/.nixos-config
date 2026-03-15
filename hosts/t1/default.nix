@@ -17,6 +17,11 @@
 
   networking.hostName = "t1";
 
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+
   boot.loader = {
     systemd-boot.enable = true;
     efi.canTouchEfiVariables = true;
