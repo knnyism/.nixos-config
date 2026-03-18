@@ -15,16 +15,20 @@
     ../../modules/nvidia.nix
   ];
 
+  boot.loader = {
+    efi.canTouchEfiVariables = true;
+    grub = {
+      enable = true;
+      efiSupport = true;
+      device = "nodev";
+    };
+  };
+
   networking.hostName = "t1";
 
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
-  };
-
-  boot.loader = {
-    systemd-boot.enable = true;
-    efi.canTouchEfiVariables = true;
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
