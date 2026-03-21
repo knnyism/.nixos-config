@@ -13,13 +13,6 @@
         rust-lang.rust-analyzer
         mkhl.direnv
         pkief.material-icon-theme
-      ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
-        {
-          name = "explorer-gitignore";
-          publisher = "timgthomas";
-          version = "0.3.1";
-          sha256 = "sha256-OlAa7s9rMG+//XlWVvMONAS1Enyysz32TXw8AowUHZ4=";
-        }
       ];
       userSettings = {
         "workbench.colorTheme" = "Experimental Dark";
