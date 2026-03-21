@@ -16,6 +16,8 @@
       ];
       userSettings = {
         "workbench.colorTheme" = "Experimental Dark";
+        "workbench.preferredDarkColorTheme" = "Experimental Dark";
+        "workbench.preferredLightColorTheme" = "Experimental Light";
         "workbench.iconTheme" = "material-icon-theme";
         "workbench.sideBar.location" = "left";
         "workbench.activityBar.location" = "top";
